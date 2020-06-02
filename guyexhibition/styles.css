@@ -15,15 +15,25 @@ body {
 }
 .one {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background: #efdefe;
+  background-image: url(/images/gallery-wall-stretch.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .two {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background: #a3f3d3;
+  background-image: url(/images/gallery-wall-stretch.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .three {
   display: flex;
@@ -43,13 +53,19 @@ body {
   height: 75%;
   width: 75%;
   padding: 0px;
-  border: 2px solid white;
+  border: 0.5px transparent white;
 }
+
 .art-description {
-  position: absolute;
   z-index: 1;
-  bottom: 50px;
+  bottom: 2%;
+  padding: 10px;
+  background-color: black;
+  color: white;
 }
+
+
+
 
 
 /*IMAGE ZOOM 1*/
@@ -80,6 +96,47 @@ body {
   width: 500px;
   height: 500px;
   background: url(/images/test.jpg) no-repeat #FFF;
+  box-shadow: 0 5px 10px -2px rgba(0,0,0,0.3);
+  pointer-events: none;
+  position: absolute;
+  opacity: 0;
+  border: 4px solid whitesmoke;
+  z-index: 99;
+  border-radius: 100%;
+  display: block;
+  transition: opacity .2s;
+}
+
+
+
+/*IMAGE ZOOM P2*/
+#img-zoomer-box-p2 {
+  display: flex;
+  text-align: center;
+  width: 800px;
+  height: auto;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#img1-p2 {
+  width: 100%;
+  height: auto;
+}
+
+#img-zoomer-box-p2:hover, #img-zoomer-box-p2:active {
+  cursor: zoom-in;
+  display: block;
+}
+
+#img-zoomer-box-p2:hover #img2-p2, #img-zoomer-box-p2:active #img2-p2 {
+  opacity: 1;
+}
+#img2-p2 {
+  width: 500px;
+  height: 500px;
+  background: url(/images/zug\ island.jpg) no-repeat #FFF;
   box-shadow: 0 5px 10px -2px rgba(0,0,0,0.3);
   pointer-events: none;
   position: absolute;
