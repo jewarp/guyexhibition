@@ -19,7 +19,7 @@ body {
   align-items: center;
   justify-content: center;
   background: #efdefe;
-  background-image: url(/images/gallery-wall-stretch.jpg);
+  background-image: url(images/gallery-wall-stretch.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -30,7 +30,7 @@ body {
   align-items: center;
   justify-content: center;
   background: #a3f3d3;
-  background-image: url(/images/gallery-wall-stretch.jpg);
+  background-image: url(images/gallery-wall-stretch.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -95,7 +95,7 @@ body {
 #img2 {
   width: 500px;
   height: 500px;
-  background: url(/images/test.jpg) no-repeat #FFF;
+  background: url(images/test.jpg) no-repeat #FFF;
   box-shadow: 0 5px 10px -2px rgba(0,0,0,0.3);
   pointer-events: none;
   position: absolute;
@@ -136,7 +136,7 @@ body {
 #img2-p2 {
   width: 500px;
   height: 500px;
-  background: url(/images/zug\ island.jpg) no-repeat #FFF;
+  background: url(images/zug\ island.jpg) no-repeat #FFF;
   box-shadow: 0 5px 10px -2px rgba(0,0,0,0.3);
   pointer-events: none;
   position: absolute;
