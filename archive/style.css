@@ -1,0 +1,298 @@
+body {
+  font-family: 'Libre Baskerville', serif;
+  margin: 0;
+  padding: 0;
+}
+.slide {
+  width: 100vw;
+  height: 100vh;
+}
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 400vw;
+ 
+}
+.one {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #efdefe;
+  background-image: url(images/gallery-wall-stretch.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.two {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #a3f3d3;
+  background-image: url(images/gallery-wall-stretch.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.three {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #0bbaa0;
+  background-image: url(images/gallery-wall-stretch.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.four {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #00dfdf;
+  background-image: url(images/gallery-wall-stretch.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.five {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: green;
+  background-image: url(images/gallery-wall-stretch.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.artwork {
+  text-align: center;
+  height: 75%;
+  width: 75%;
+  padding: 0px;
+  border: 0.5px transparent white;
+}
+
+.art-description {
+  z-index: 1;
+  bottom: 2%;
+  padding: 10px;
+  background-color: black;
+  color: white;
+}
+
+
+
+
+
+/*IMAGE ZOOM 1*/
+#img-zoomer-box {
+  display: flex;
+  text-align: center;
+  width: 800px;
+  height: auto;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#img1 {
+  width: 100%;
+  height: auto;
+}
+
+#img-zoomer-box:hover, #img-zoomer-box:active {
+  cursor: zoom-in;
+  display: block;
+}
+
+#img-zoomer-box:hover #img2, #img-zoomer-box:active #img2 {
+  opacity: 1;
+}
+#img2 {
+  width: 500px;
+  height: 500px;
+  background: url(images/test.jpg) no-repeat #FFF;
+  box-shadow: 0 5px 10px -2px rgba(0,0,0,0.3);
+  pointer-events: none;
+  position: absolute;
+  opacity: 0;
+  border: 4px solid whitesmoke;
+  z-index: 99;
+  border-radius: 100%;
+  display: block;
+  transition: opacity .2s;
+}
+
+
+
+/*IMAGE ZOOM P2*/
+#img-zoomer-box-p2 {
+  display: flex;
+  text-align: center;
+  width: 800px;
+  height: auto;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#img1-p2 {
+  width: 100%;
+  height: auto;
+}
+
+#img-zoomer-box-p2:hover, #img-zoomer-box-p2:active {
+  cursor: zoom-in;
+  display: block;
+}
+
+#img-zoomer-box-p2:hover #img2-p2, #img-zoomer-box-p2:active #img2-p2 {
+  opacity: 1;
+}
+#img2-p2 {
+  width: 500px;
+  height: 500px;
+  background: url(images/zug\ island.jpg) no-repeat #FFF;
+  box-shadow: 0 5px 10px -2px rgba(0,0,0,0.3);
+  pointer-events: none;
+  position: absolute;
+  opacity: 0;
+  border: 4px solid whitesmoke;
+  z-index: 99;
+  border-radius: 100%;
+  display: block;
+  transition: opacity .2s;
+}
+
+
+
+
+
+
+/*IMAGE ZOOM P3*/
+#img-zoomer-box-p3 {
+  display: flex;
+  text-align: center;
+  width: 800px;
+  height: auto;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#img1-p3 {
+  width: 100%;
+  height: auto;
+}
+
+#img-zoomer-box-p3:hover, #img-zoomer-box-p3:active {
+  cursor: zoom-in;
+  display: block;
+}
+
+#img-zoomer-box-p3:hover #img2-p3, #img-zoomer-box-p3:active #img2-p3 {
+  opacity: 1;
+}
+#img2-p3 {
+  width: 500px;
+  height: 500px;
+  background: url(images/gran-canyon.jpg) no-repeat #FFF;
+  box-shadow: 0 5px 10px -2px rgba(0,0,0,0.3);
+  pointer-events: none;
+  position: absolute;
+  opacity: 0;
+  border: 4px solid whitesmoke;
+  z-index: 99;
+  border-radius: 100%;
+  display: block;
+  transition: opacity .2s;
+}
+
+
+/*IMAGE ZOOM P4*/
+#img-zoomer-box-p4 {
+  display: flex;
+  text-align: center;
+  width: 800px;
+  height: auto;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#img1-p4 {
+  width: 100%;
+  height: auto;
+}
+
+#img-zoomer-box-p4:hover, #img-zoomer-box-p4:active {
+  cursor: zoom-in;
+  display: block;
+}
+
+#img-zoomer-box-p4:hover #img2-p4, #img-zoomer-box-p4:active #img2-p4 {
+  opacity: 1;
+}
+#img2-p4 {
+  width: 500px;
+  height: 500px;
+  background: url(images/industral-building.jpg) no-repeat #FFF;
+  box-shadow: 0 5px 10px -2px rgba(0,0,0,0.3);
+  pointer-events: none;
+  position: absolute;
+  opacity: 0;
+  border: 4px solid whitesmoke;
+  z-index: 99;
+  border-radius: 100%;
+  display: block;
+  transition: opacity .2s;
+}
+
+
+
+
+/*IMAGE ZOOM P5*/
+#img-zoomer-box-p5 {
+  display: flex;
+  text-align: center;
+  width: 800px;
+  height: auto;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#img1-p5 {
+  width: 100%;
+  height: auto;
+}
+
+#img-zoomer-box-p5:hover, #img-zoomer-box-p5:active {
+  cursor: zoom-in;
+  display: block;
+}
+
+#img-zoomer-box-p5:hover #img2-p5, #img-zoomer-box-p5:active #img2-p5 {
+  opacity: 1;
+}
+#img2-p5 {
+  width: 500px;
+  height: 500px;
+  background: url(images/industrialiceberg.jpg) no-repeat #FFF;
+  box-shadow: 0 5px 10px -2px rgba(0,0,0,0.3);
+  pointer-events: none;
+  position: absolute;
+  opacity: 0;
+  border: 4px solid whitesmoke;
+  z-index: 99;
+  border-radius: 100%;
+  display: block;
+  transition: opacity .2s;
+}

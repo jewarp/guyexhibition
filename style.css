@@ -10,16 +10,16 @@ body {
 .wrapper {
   display: flex;
   flex-direction: row;
-  width: 400vw;
+  width: 500vw;
  
 }
 .one {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  background: #efdefe;
-  background-image: url(images/gallery-wall-stretch.jpg);
+  justify-content: space-evenly;
+  background: whitesmoke;
+  /*background-image: url(images/gallery-wall-stretch.jpg);*/
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -28,9 +28,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  background: #a3f3d3;
-  background-image: url(images/gallery-wall-stretch.jpg);
+  justify-content: space-evenly;
+  background: whitesmoke;
+  /*background-image: url(images/gallery-wall-stretch.jpg);*/
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -39,9 +39,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  background: #0bbaa0;
-  background-image: url(images/gallery-wall-stretch.jpg);
+  justify-content: space-evenly;
+  background: whitesmoke;
+  /*background-image: url(images/gallery-wall-stretch.jpg);*/
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -50,9 +50,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  background: #00dfdf;
-  background-image: url(images/gallery-wall-stretch.jpg);
+  justify-content: space-evenly;
+  background: whitesmoke;
+  /*background-image: url(images/gallery-wall-stretch.jpg);*/
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -63,9 +63,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  background: green;
-  background-image: url(images/gallery-wall-stretch.jpg);
+  justify-content: space-evenly;
+  background: whitesmoke;
+ /* background-image: url(images/gallery-wall-stretch.jpg);*/
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -79,14 +79,25 @@ body {
   border: 0.5px transparent white;
 }
 
+
+
+
 .art-description {
   z-index: 1;
-  bottom: 2%;
+  bottom: 1%;
   padding: 10px;
-  background-color: black;
-  color: white;
+  text-align: center;
+  color: black;
+  font-size: 10px;
 }
 
+.art-txt {
+  z-index: 1;
+  bottom: 1%;
+  padding: 10px;
+  text-align: center;
+  color: black;
+}
 
 
 
@@ -95,8 +106,8 @@ body {
 #img-zoomer-box {
   display: flex;
   text-align: center;
-  width: 800px;
-  height: auto;
+  width: auto;
+  height: 80VH;
   position: relative;
   margin-left: auto;
   margin-right: auto;
@@ -104,7 +115,7 @@ body {
 
 #img1 {
   width: 100%;
-  height: auto;
+  height: 80VH;
 }
 
 #img-zoomer-box:hover, #img-zoomer-box:active {
@@ -116,8 +127,8 @@ body {
   opacity: 1;
 }
 #img2 {
-  width: 500px;
-  height: 500px;
+  width: 300px;
+  height: 300px;
   background: url(images/test.jpg) no-repeat #FFF;
   box-shadow: 0 5px 10px -2px rgba(0,0,0,0.3);
   pointer-events: none;
@@ -136,8 +147,8 @@ body {
 #img-zoomer-box-p2 {
   display: flex;
   text-align: center;
-  width: 800px;
-  height: auto;
+  width: auto;
+  height: 80VH;
   position: relative;
   margin-left: auto;
   margin-right: auto;
@@ -145,7 +156,7 @@ body {
 
 #img1-p2 {
   width: 100%;
-  height: auto;
+  height: 80VH;
 }
 
 #img-zoomer-box-p2:hover, #img-zoomer-box-p2:active {
@@ -157,8 +168,8 @@ body {
   opacity: 1;
 }
 #img2-p2 {
-  width: 500px;
-  height: 500px;
+  width: 300px;
+  height: 300px;
   background: url(images/zug\ island.jpg) no-repeat #FFF;
   box-shadow: 0 5px 10px -2px rgba(0,0,0,0.3);
   pointer-events: none;
@@ -180,8 +191,8 @@ body {
 #img-zoomer-box-p3 {
   display: flex;
   text-align: center;
-  width: 800px;
-  height: auto;
+  width: auto;
+  height: 80VH;
   position: relative;
   margin-left: auto;
   margin-right: auto;
@@ -189,7 +200,7 @@ body {
 
 #img1-p3 {
   width: 100%;
-  height: auto;
+  height: 80VH;
 }
 
 #img-zoomer-box-p3:hover, #img-zoomer-box-p3:active {
@@ -201,8 +212,8 @@ body {
   opacity: 1;
 }
 #img2-p3 {
-  width: 500px;
-  height: 500px;
+  width: 300px;
+  height: 300px;
   background: url(images/gran-canyon.jpg) no-repeat #FFF;
   box-shadow: 0 5px 10px -2px rgba(0,0,0,0.3);
   pointer-events: none;
@@ -220,8 +231,8 @@ body {
 #img-zoomer-box-p4 {
   display: flex;
   text-align: center;
-  width: 800px;
-  height: auto;
+  width: auto;
+  height: 80VH;
   position: relative;
   margin-left: auto;
   margin-right: auto;
@@ -229,7 +240,7 @@ body {
 
 #img1-p4 {
   width: 100%;
-  height: auto;
+  height: 80VH;
 }
 
 #img-zoomer-box-p4:hover, #img-zoomer-box-p4:active {
@@ -241,8 +252,8 @@ body {
   opacity: 1;
 }
 #img2-p4 {
-  width: 500px;
-  height: 500px;
+  width: 300px;
+  height: 300px;
   background: url(images/industral-building.jpg) no-repeat #FFF;
   box-shadow: 0 5px 10px -2px rgba(0,0,0,0.3);
   pointer-events: none;
@@ -262,8 +273,8 @@ body {
 #img-zoomer-box-p5 {
   display: flex;
   text-align: center;
-  width: 800px;
-  height: auto;
+  width: auto;
+  height: 80VH;
   position: relative;
   margin-left: auto;
   margin-right: auto;
@@ -271,7 +282,7 @@ body {
 
 #img1-p5 {
   width: 100%;
-  height: auto;
+  height: 80VH;
 }
 
 #img-zoomer-box-p5:hover, #img-zoomer-box-p5:active {
@@ -283,8 +294,8 @@ body {
   opacity: 1;
 }
 #img2-p5 {
-  width: 500px;
-  height: 500px;
+  width: 300px;
+  height: 300px;
   background: url(images/industrialiceberg.jpg) no-repeat #FFF;
   box-shadow: 0 5px 10px -2px rgba(0,0,0,0.3);
   pointer-events: none;
