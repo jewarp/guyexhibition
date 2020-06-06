@@ -80,6 +80,12 @@ body {
 }
 
 
+@media only screen and (max-width: 1000px) {
+  .artwork {
+    width: 98%;
+  }
+}
+
 
 
 .art-description {
@@ -116,6 +122,7 @@ body {
 #img1 {
   width: 100%;
   height: 80VH;
+  object-fit: scale-down;
 }
 
 #img-zoomer-box:hover, #img-zoomer-box:active {
@@ -157,6 +164,7 @@ body {
 #img1-p2 {
   width: 100%;
   height: 80VH;
+  object-fit: scale-down;
 }
 
 #img-zoomer-box-p2:hover, #img-zoomer-box-p2:active {
@@ -201,6 +209,7 @@ body {
 #img1-p3 {
   width: 100%;
   height: 80VH;
+  object-fit: scale-down;
 }
 
 #img-zoomer-box-p3:hover, #img-zoomer-box-p3:active {
@@ -241,6 +250,7 @@ body {
 #img1-p4 {
   width: 100%;
   height: 80VH;
+  object-fit: scale-down;
 }
 
 #img-zoomer-box-p4:hover, #img-zoomer-box-p4:active {
@@ -283,6 +293,7 @@ body {
 #img1-p5 {
   width: 100%;
   height: 80VH;
+  object-fit: scale-down;
 }
 
 #img-zoomer-box-p5:hover, #img-zoomer-box-p5:active {
