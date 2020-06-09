@@ -43,8 +43,8 @@ var zoomer = function (){
           y = e.pageY - this.offsetTop,
           imgWidth = original.width,
           imgHeight = original.height,
-          xperc = ((x/imgWidth) * 100),
-          yperc = ((y/imgHeight) * 100);
+          xperc = ((x/imgWidth) * 10),
+          yperc = ((y/imgHeight) * 10);
   
       if(x > (.01 * imgWidth)) {
         xperc += (.15 * xperc);

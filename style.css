@@ -2,6 +2,7 @@ body {
   font-family: 'Libre Baskerville', serif;
   margin: 0;
   padding: 0;
+  width: 100VW;
 }
 
 a, a:active {
@@ -48,7 +49,7 @@ button:active{
   padding: 5px;
   top: 0;
   left: 0;
-  width: 100VW;
+  width: 100%;
   border: 0px solid red;
   z-index: 10000;
 }
@@ -64,6 +65,15 @@ button:active{
   margin-right: 20px;
   -webkit-animation: bounceRight 2s infinite;
   animation: bounceRight 2s infinite;
+  float:right;
+  color: grey;
+}
+
+.arrow2 {
+  font-size: 30px;
+  margin-right: 20px;
+  /*-webkit-animation: bounceRight 2s infinite;
+  animation: bounceRight 2s infinite;*/
   float:right;
   color: grey;
 }
@@ -132,14 +142,13 @@ button:active{
   width: 100vw;
   height: 100vh;
 }
-.wrapper {
-  display: flex;
-  flex-direction: row;
-  width: 500vw;
- 
-}
+
+
+
 .one {
   display: flex;
+
+  width: 100VW;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
@@ -148,6 +157,7 @@ button:active{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  scroll-snap-align: start;
 }
 .two {
   display: flex;
@@ -194,6 +204,68 @@ button:active{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.six {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background: white;
+ /* background-image: url(images/gallery-wall-stretch.jpg);*/
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.seven {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background: white;
+ /* background-image: url(images/gallery-wall-stretch.jpg);*/
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.eight {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background: white;
+ /* background-image: url(images/gallery-wall-stretch.jpg);*/
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 600vw;
+  scroll-snap-type: y mandatory;
+}
+
+.wrapper-vertical {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  scroll-snap-type: y mandatory;
+}
+
+@media only screen and (max-width: 800px) {
+
+  .one {
+    background-color: blue !important;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: column !important;
+    width: 100% !important;
+  }
 }
 
 .artwork {
@@ -251,7 +323,7 @@ button:active{
 }
 
 #img-zoomer-box:hover, #img-zoomer-box:active {
-  cursor: zoom-in;
+  cursor: none;
   display: block;
 }
 
@@ -259,8 +331,8 @@ button:active{
   opacity: 1;
 }
 #img2 {
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
   background: url(images/test.jpg) no-repeat #FFF;
   box-shadow: 0 5px 10px -2px rgba(0,0,0,0.3);
   pointer-events: none;
@@ -293,7 +365,7 @@ button:active{
 }
 
 #img-zoomer-box-p2:hover, #img-zoomer-box-p2:active {
-  cursor: zoom-in;
+  cursor: none;
   display: block;
 }
 
@@ -301,8 +373,8 @@ button:active{
   opacity: 1;
 }
 #img2-p2 {
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
   background: url(images/zug\ island.jpg) no-repeat #FFF;
   box-shadow: 0 5px 10px -2px rgba(0,0,0,0.3);
   pointer-events: none;
@@ -338,7 +410,7 @@ button:active{
 }
 
 #img-zoomer-box-p3:hover, #img-zoomer-box-p3:active {
-  cursor: zoom-in;
+  cursor: none;
   display: block;
 }
 
@@ -346,8 +418,8 @@ button:active{
   opacity: 1;
 }
 #img2-p3 {
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
   background: url(images/gran-canyon.jpg) no-repeat #FFF;
   box-shadow: 0 5px 10px -2px rgba(0,0,0,0.3);
   pointer-events: none;
@@ -379,7 +451,7 @@ button:active{
 }
 
 #img-zoomer-box-p4:hover, #img-zoomer-box-p4:active {
-  cursor: zoom-in;
+  cursor: none;
   display: block;
 }
 
@@ -387,8 +459,8 @@ button:active{
   opacity: 1;
 }
 #img2-p4 {
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
   background: url(images/industral-building.jpg) no-repeat #FFF;
   box-shadow: 0 5px 10px -2px rgba(0,0,0,0.3);
   pointer-events: none;
@@ -422,7 +494,7 @@ button:active{
 }
 
 #img-zoomer-box-p5:hover, #img-zoomer-box-p5:active {
-  cursor: zoom-in;
+  cursor: none;
   display: block;
 }
 
@@ -430,8 +502,8 @@ button:active{
   opacity: 1;
 }
 #img2-p5 {
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
   background: url(images/industrialiceberg.jpg) no-repeat #FFF;
   box-shadow: 0 5px 10px -2px rgba(0,0,0,0.3);
   pointer-events: none;
@@ -444,6 +516,50 @@ button:active{
   transition: opacity .2s;
 }
 
+
+
+
+
+
+/*IMAGE ZOOM P6*/
+#img-zoomer-box-p6 {
+  display: flex;
+  text-align: center;
+  width: auto;
+  height: 80VH;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#img1-p6 {
+  width: 100%;
+  height: 80VH;
+  object-fit: scale-down;
+}
+
+#img-zoomer-box-p6:hover, #img-zoomer-box-p6:active {
+  cursor: none;
+  display: block;
+}
+
+#img-zoomer-box-p6:hover #img2-p6, #img-zoomer-box-p5:active #img2-p6 {
+  opacity: 1;
+}
+#img2-p6 {
+  width: 400px;
+  height: 400px;
+  background: url(images/sandtimer.jpg) no-repeat #FFF;
+  box-shadow: 0 5px 10px -2px rgba(0,0,0,0.3);
+  pointer-events: none;
+  position: absolute;
+  opacity: 0;
+  border: 4px solid whitesmoke;
+  z-index: 99;
+  border-radius: 100%;
+  display: block;
+  transition: opacity .2s;
+}
 
 /* about page */
 
