@@ -12,7 +12,7 @@ a, a:active {
 
 button {
   font-family: 'Libre Baskerville', serif;
-  font-size: 12px;
+  font-size: 1rem;
   color: grey;
   background-color: white;
   border: none;
@@ -25,7 +25,7 @@ button {
 
 @media only screen and (max-width: 600px) {
   button {
-    font-size: 16px;
+    font-size: 12px;
   }
 }
 
@@ -56,7 +56,7 @@ button:active{
   padding: 5px;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100VW;
   border: 0px solid red;
   z-index: 10000;
 }
@@ -76,8 +76,18 @@ button:active{
   color: grey;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   .arrow {
+    display: none;
+  }
+  .arrow2 {
+    display: none;
+  }
+  .arrow3 {
+    display: none;
+  }
+
+  .back a {
     display: none;
   }
 }
@@ -88,7 +98,7 @@ button:active{
   -webkit-animation: bounceRight 2s infinite;
   animation: bounceRight 2s infinite;
   float:right;
-  color: white;
+  color: transparent;
 }
 
 .arrow3 {
@@ -99,7 +109,6 @@ button:active{
   margin-right: 20px;
   float:right;
   color: grey;
-
 }
 
 .back a{
@@ -271,7 +280,7 @@ button:active{
   width: 600VW;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
 
 .wrapper {
     display: flex !important;
@@ -281,9 +290,7 @@ button:active{
 }
 
 .wrapper-vertical {
-  display: flex;
-  flex-direction: column;
-  width: 100vw;
+  width: 100%;
 }
 
 .artwork {
@@ -309,7 +316,7 @@ button:active{
   padding: 10px;
   text-align: center;
   color: black;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 @media only screen and (max-width: 600px) {
@@ -341,6 +348,7 @@ button:active{
   margin-right: auto;
 }
 
+
 #img1 {
   width: 100%;
   height: 80VH;
@@ -368,6 +376,16 @@ button:active{
   border-radius: 100%;
   display: block;
   transition: opacity .2s;
+}
+
+@media only screen and (max-width: 800px) {
+  #img2 {
+    display: none;
+  }
+
+  #img-zoomer-box:hover, #img-zoomer-box:active {
+    cursor: pointer;
+  }
 }
 
 
@@ -412,6 +430,15 @@ button:active{
   transition: opacity .2s;
 }
 
+@media only screen and (max-width: 800px) {
+  #img2-p2 {
+    display: none;
+  }
+
+  #img-zoomer-box-p2:hover, #img-zoomer-box-p2:active {
+    cursor: pointer;
+  }
+}
 
 
 
@@ -457,6 +484,15 @@ button:active{
   transition: opacity .2s;
 }
 
+@media only screen and (max-width: 800px) {
+  #img2-p3 {
+    display: none;
+  }
+
+  #img-zoomer-box-p3:hover, #img-zoomer-box-p3:active {
+    cursor: pointer;
+  }
+}
 
 /*IMAGE ZOOM P4*/
 #img-zoomer-box-p4 {
@@ -498,7 +534,15 @@ button:active{
   transition: opacity .2s;
 }
 
+@media only screen and (max-width: 800px) {
+  #img2-p4 {
+    display: none;
+  }
 
+  #img-zoomer-box-p4:hover, #img-zoomer-box-p4:active {
+    cursor: pointer;
+  }
+}
 
 
 /*IMAGE ZOOM P5*/
@@ -541,7 +585,15 @@ button:active{
   transition: opacity .2s;
 }
 
+@media only screen and (max-width: 800px) {
+  #img2-p5 {
+    display: none;
+  }
 
+  #img-zoomer-box-p5:hover, #img-zoomer-box-p5:active {
+    cursor: pointer;
+  }
+}
 
 
 
@@ -586,10 +638,36 @@ button:active{
   transition: opacity .2s;
 }
 
+@media only screen and (max-width: 800px) {
+  #img2-p6 {
+    display: none;
+  }
+
+  #img-zoomer-box-p6:hover, #img-zoomer-box-p6:active {
+    cursor: pointer;
+  }
+}
+
+
+
+#img1-p7 {
+  width: 100%;
+  height: 80VH;
+  object-fit: scale-down;
+}
+
+#img1-p8 {
+  width: 100%;
+  height: 80VH;
+  object-fit: scale-down;
+}
+
+
 /* about page */
 
 .about {
   display: flex;
+  font-size: 1rem;
   color: grey;
   flex-direction: column;
   text-align: center;
@@ -604,17 +682,22 @@ button:active{
 
 .web-by {
 position: fixed;
-bottom: 0;
-width: 99.2%;
 text-align: right;
-font-size: 10px;
+bottom: 10px;
+right: 10px;
+width: 100%;
+text-align: right;
+font-size: 0.8rem;
 color: grey;
 border: 1px dashed white;
 }
 
+
 .web-by a{
   color: grey;
   }
+
+
 
   .web-by a:hover {
     border-bottom: 1px dashed grey;
