@@ -1,0 +1,605 @@
+body {
+  font-family: 'Libre Baskerville', serif;
+  margin: 0;
+  padding: 0;
+  width: 100VW;
+}
+
+a, a:active {
+  -webkit-appearance: none;
+  text-decoration: none;
+}
+
+button {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 12px;
+  color: grey;
+  background-color: white;
+  border: none;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  margin: 0px 10px;
+  padding: 2.5px 10px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  button {
+    font-size: 16px;
+  }
+}
+
+button:focus {
+  outline:0;
+}
+
+.logo {
+  background-color: transparent;
+  margin-left: 0px;
+  border: none;
+}
+
+.logo:hover{
+  border: none;
+}
+
+button:hover{
+  border: 1px dashed lightgrey;
+}
+
+button:active{
+  border: 1px dashed lightgrey;
+}
+
+.header {
+  position: fixed;
+  padding: 5px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border: 0px solid red;
+  z-index: 10000;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.arrow {
+  font-size: 30px;
+  margin-right: 20px;
+  -webkit-animation: bounceRight 2s infinite;
+  animation: bounceRight 2s infinite;
+  float:right;
+  color: grey;
+}
+
+@media only screen and (max-width: 600px) {
+  .arrow {
+    display: none;
+  }
+}
+
+.arrow2 {
+  font-size: 30px;
+  margin-right: 20px;
+  -webkit-animation: bounceRight 2s infinite;
+  animation: bounceRight 2s infinite;
+  float:right;
+  color: white;
+}
+
+.arrow3 {
+  position: absolute;
+  top: 10px; 
+  right: 10px;
+  font-size: 30px;
+  margin-right: 20px;
+  float:right;
+  color: grey;
+
+}
+
+.back a{
+  font-size: 30px;
+  margin-right: 20px;
+  width: 50px;
+  color: grey;
+  -webkit-appearance: none;
+  text-decoration: none;
+}
+
+@-webkit-keyframes bounceRight {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  40% {
+    -webkit-transform: translateX(-15px);
+    transform: translateX(-15px);
+  }
+  60% {
+    -webkit-transform: translateX(-7.5px);
+    transform: translateX(-7.5px);
+  }
+}
+@-moz-keyframes bounceRight {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(-15px);
+  }
+  60% {
+    transform: translateX(-7.5px);
+  }
+}
+@keyframes bounceRight {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+  40% {
+    -ms-transform: translateX(-15px);
+    transform: translateX(-15px);
+  }
+  60% {
+    -ms-transform: translateX(-7.5px);
+    transform: translateX(-7.5px);
+  }
+}
+
+.slide {
+  width: 100vw;
+  height: 100vh;
+}
+
+
+
+.one {
+  display: flex;
+  width: 100VW;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background: white;
+  /*background-image: url(images/gallery-wall-stretch.jpg);*/
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.two {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background: white;
+  /*background-image: url(images/gallery-wall-stretch.jpg);*/
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.three {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background: white;
+  /*background-image: url(images/gallery-wall-stretch.jpg);*/
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.four {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background: white;
+  /*background-image: url(images/gallery-wall-stretch.jpg);*/
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.five {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background: white;
+ /* background-image: url(images/gallery-wall-stretch.jpg);*/
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.six {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background: white;
+ /* background-image: url(images/gallery-wall-stretch.jpg);*/
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.seven {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background: white;
+ /* background-image: url(images/gallery-wall-stretch.jpg);*/
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.eight {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background: white;
+ /* background-image: url(images/gallery-wall-stretch.jpg);*/
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 600VW;
+}
+
+@media only screen and (max-width: 600px) {
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+.wrapper-vertical {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
+
+.artwork {
+  text-align: center;
+  height: 75%;
+  width: 75%;
+  padding: 0px;
+  border: 0.5px transparent white;
+}
+
+
+@media only screen and (max-width: 1000px) {
+  .artwork {
+    width: 98%;
+  }
+}
+
+
+
+.art-description {
+  z-index: 1;
+  bottom: 1%;
+  padding: 10px;
+  text-align: center;
+  color: black;
+  font-size: 0.8rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .one .art-description {
+    font-size: 1rem !important;
+  }
+}
+
+
+.art-txt {
+  z-index: 1;
+  bottom: 1%;
+  padding: 10px;
+  text-align: center;
+  color: red;
+}
+
+
+
+
+/*IMAGE ZOOM 1*/
+#img-zoomer-box {
+  display: flex;
+  text-align: center;
+  width: auto;
+  height: 80VH;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#img1 {
+  width: 100%;
+  height: 80VH;
+  object-fit: scale-down;
+}
+
+#img-zoomer-box:hover, #img-zoomer-box:active {
+  cursor: none;
+  display: block;
+}
+
+#img-zoomer-box:hover #img2, #img-zoomer-box:active #img2 {
+  opacity: 1;
+}
+#img2 {
+  width: 400px;
+  height: 400px;
+  background: url(images/test.jpg) no-repeat #FFF;
+  box-shadow: 0 5px 10px -2px rgba(0,0,0,0.3);
+  pointer-events: none;
+  position: absolute;
+  opacity: 0;
+  border: 4px solid whitesmoke;
+  z-index: 99;
+  border-radius: 100%;
+  display: block;
+  transition: opacity .2s;
+}
+
+
+
+/*IMAGE ZOOM P2*/
+#img-zoomer-box-p2 {
+  display: flex;
+  text-align: center;
+  width: auto;
+  height: 80VH;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#img1-p2 {
+  width: 100%;
+  height: 80VH;
+  object-fit: scale-down;
+}
+
+#img-zoomer-box-p2:hover, #img-zoomer-box-p2:active {
+  cursor: none;
+  display: block;
+}
+
+#img-zoomer-box-p2:hover #img2-p2, #img-zoomer-box-p2:active #img2-p2 {
+  opacity: 1;
+}
+#img2-p2 {
+  width: 400px;
+  height: 400px;
+  background: url(images/zug\ island.jpg) no-repeat #FFF;
+  box-shadow: 0 5px 10px -2px rgba(0,0,0,0.3);
+  pointer-events: none;
+  position: absolute;
+  opacity: 0;
+  border: 4px solid whitesmoke;
+  z-index: 99;
+  border-radius: 100%;
+  display: block;
+  transition: opacity .2s;
+}
+
+
+
+
+
+
+/*IMAGE ZOOM P3*/
+#img-zoomer-box-p3 {
+  display: flex;
+  text-align: center;
+  width: auto;
+  height: 80VH;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#img1-p3 {
+  width: 100%;
+  height: 80VH;
+  object-fit: scale-down;
+}
+
+#img-zoomer-box-p3:hover, #img-zoomer-box-p3:active {
+  cursor: none;
+  display: block;
+}
+
+#img-zoomer-box-p3:hover #img2-p3, #img-zoomer-box-p3:active #img2-p3 {
+  opacity: 1;
+}
+#img2-p3 {
+  width: 400px;
+  height: 400px;
+  background: url(images/gran-canyon.jpg) no-repeat #FFF;
+  box-shadow: 0 5px 10px -2px rgba(0,0,0,0.3);
+  pointer-events: none;
+  position: absolute;
+  opacity: 0;
+  border: 4px solid whitesmoke;
+  z-index: 99;
+  border-radius: 100%;
+  display: block;
+  transition: opacity .2s;
+}
+
+
+/*IMAGE ZOOM P4*/
+#img-zoomer-box-p4 {
+  display: flex;
+  text-align: center;
+  width: auto;
+  height: 80VH;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#img1-p4 {
+  width: 100%;
+  height: 80VH;
+  object-fit: scale-down;
+}
+
+#img-zoomer-box-p4:hover, #img-zoomer-box-p4:active {
+  cursor: none;
+  display: block;
+}
+
+#img-zoomer-box-p4:hover #img2-p4, #img-zoomer-box-p4:active #img2-p4 {
+  opacity: 1;
+}
+#img2-p4 {
+  width: 400px;
+  height: 400px;
+  background: url(images/industral-building.jpg) no-repeat #FFF;
+  box-shadow: 0 5px 10px -2px rgba(0,0,0,0.3);
+  pointer-events: none;
+  position: absolute;
+  opacity: 0;
+  border: 4px solid whitesmoke;
+  z-index: 99;
+  border-radius: 100%;
+  display: block;
+  transition: opacity .2s;
+}
+
+
+
+
+/*IMAGE ZOOM P5*/
+#img-zoomer-box-p5 {
+  display: flex;
+  text-align: center;
+  width: auto;
+  height: 80VH;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#img1-p5 {
+  width: 100%;
+  height: 80VH;
+  object-fit: scale-down;
+}
+
+#img-zoomer-box-p5:hover, #img-zoomer-box-p5:active {
+  cursor: none;
+  display: block;
+}
+
+#img-zoomer-box-p5:hover #img2-p5, #img-zoomer-box-p5:active #img2-p5 {
+  opacity: 1;
+}
+#img2-p5 {
+  width: 400px;
+  height: 400px;
+  background: url(images/industrialiceberg.jpg) no-repeat #FFF;
+  box-shadow: 0 5px 10px -2px rgba(0,0,0,0.3);
+  pointer-events: none;
+  position: absolute;
+  opacity: 0;
+  border: 4px solid whitesmoke;
+  z-index: 99;
+  border-radius: 100%;
+  display: block;
+  transition: opacity .2s;
+}
+
+
+
+
+
+
+/*IMAGE ZOOM P6*/
+#img-zoomer-box-p6 {
+  display: flex;
+  text-align: center;
+  width: auto;
+  height: 80VH;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#img1-p6 {
+  width: 100%;
+  height: 80VH;
+  object-fit: scale-down;
+}
+
+#img-zoomer-box-p6:hover, #img-zoomer-box-p6:active {
+  cursor: none;
+  display: block;
+}
+
+#img-zoomer-box-p6:hover #img2-p6, #img-zoomer-box-p5:active #img2-p6 {
+  opacity: 1;
+}
+#img2-p6 {
+  width: 400px;
+  height: 400px;
+  background: url(images/sandtimer.jpg) no-repeat #FFF;
+  box-shadow: 0 5px 10px -2px rgba(0,0,0,0.3);
+  pointer-events: none;
+  position: absolute;
+  opacity: 0;
+  border: 4px solid whitesmoke;
+  z-index: 99;
+  border-radius: 100%;
+  display: block;
+  transition: opacity .2s;
+}
+
+/* about page */
+
+.about {
+  display: flex;
+  color: grey;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 95VH;
+}
+
+.about p{
+  width: 80%;
+}
+
+
